@@ -386,4 +386,17 @@ nav .menu-btn i{
         height: 50vh;
     } */
 
+
+    /* Services Page */
+
+    .services-content{
+        display: block;
+    }
+
+    .inner-box-services{
+        width: 100%;
+        border: none;
+    }
+
+
 }
