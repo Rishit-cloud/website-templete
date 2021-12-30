@@ -7,6 +7,7 @@
 
 ::-webkit-scrollbar{
     width: 10px;
+    padding: 2px;
 }
 
 ::-webkit-scrollbar-track{
@@ -15,6 +16,8 @@
 
 ::-webkit-scrollbar-thumb{
     background-color: rgb(255, 31, 31);
+    border-radius: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover{
@@ -252,6 +255,52 @@ nav .menu-btn i{
     padding: 20px 10px;
 }
 
+.explanation-services{
+    width: 100%;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+.left-services{
+    flex-direction: row-reverse;
+}
+
+.service-type{
+    width: 100%;
+    padding: 5vh 0;
+}
+
+.service-type h1{
+    text-align: center;
+    padding: 3vh;
+}
+
+.service-type-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10%;
+    width: 100%;
+}
+
+.service-type-img{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-type-img img{
+    width: 90%;
+    border: 3px solid rgb(255, 31, 31);
+    border-radius: 25px;
+}
+
+.service-type-content p{
+    width: 60%;
+    text-align: center;
+}
+
 
 @keyframes sliderAnim {
     0% {
@@ -291,7 +340,7 @@ nav .menu-btn i{
     }
 }
 
-@media (max-width:920px) {
+@media (max-width:850px) {
     .logo{
         width: 120px
     }
@@ -398,5 +447,26 @@ nav .menu-btn i{
         border: none;
     }
 
+
+    .service-type-content{
+        display: block;
+        text-align: center;
+        
+    }
+
+    .service-type-img{
+        width: 90%;
+        padding-left: 7%;
+        justify-content: center;
+    }
+
+    .service-type-content p{
+        width: 100%;
+        font-size: .9rem;
+    }
+
+    .service-type h1{
+        font-size: 1.1rem;
+    }
 
 }
